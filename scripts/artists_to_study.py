@@ -1,4 +1,4 @@
-import os, random
+import os
 import gradio as gr
 from modules import scripts, script_callbacks
 root_path = os.path.join(scripts.basedir(), "ats\\thumbnail")
