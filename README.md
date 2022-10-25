@@ -7,3 +7,5 @@ https://artiststostudy.pages.dev addapted to an extension for [web ui](https://g
 To install it, clone the repo into the `extensions` directory and restart the web ui:
 
 `git clone https://github.com/camenduru/stable-diffusion-webui-artists-to-study`
+
+You can add the artist name to the clipboard by clicking on it. (thanks for the idea @gmaciocci)
