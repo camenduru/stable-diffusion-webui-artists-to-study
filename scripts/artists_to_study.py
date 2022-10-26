@@ -22,6 +22,7 @@ def on_ui_tabs():
                 for jpg_path in jpg_paths:
                     with gr.Tab(jpg_path):
                         input_path = f"{root_path}\\{prompt_path}\\{jpg_path}"
+                        input_path = input_path.replace('\\', os.sep).replace('/', os.sep)
                         gallery_label = f"{prompt_path}-{jpg_path}"
                         txt = gr.Textbox(value=input_path, interactive=False, show_label=False, visible=True)
                         btn = gr.Button(value="Get Images", elem_id=f"ats-button-{prompt_path}-{jpg_path}")
