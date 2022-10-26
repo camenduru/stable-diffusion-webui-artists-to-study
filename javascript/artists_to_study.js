@@ -6,9 +6,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 gallery.querySelectorAll('button').forEach(el => el.addEventListener(
                     "click",
                     event => {
-                      const img = el.querySelector("img");
-                      if (img){
-                        const after_ = img.src.substring(img.src.indexOf('_') + 1);
+                      const div = el.querySelector('div');
+                      if (div){
+                        const inside_div = div.querySelector('div').textContent
+                        const after_ = inside_div.substring(inside_div.indexOf('_') + 1);
                         const before_ = after_.substring(0, after_.indexOf('_'));
                         navigator.clipboard.writeText(decodeURI(before_));
                       } 
