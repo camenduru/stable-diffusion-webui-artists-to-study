@@ -6,10 +6,6 @@ root_path = os.path.join(scripts.basedir(), "ats\\thumbnail")
 jpg_paths = ['anime', 'cartoon', 'digipa-high-impact', 'digipa-med-impact', 'digipa-low-impact', 'fareast', 'fineart', 'scribbles', 'special', 'ukioe', 'weird', 'black-white', 'nudity', 'c', 'n']
 prompt_paths = ['dog', 'house', 'portrait', 'spaceship']
 
-class Script(scripts.Script):
-    def title(self):
-        return "Artists To Study"
-
 def get_images(jpg_path):
     images = []
     for jpg_image in os.listdir(f"{jpg_path}"):
