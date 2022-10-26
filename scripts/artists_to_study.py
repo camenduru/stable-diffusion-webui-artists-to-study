@@ -9,10 +9,12 @@ prompt_paths = ['dog', 'house', 'portrait', 'spaceship']
 def get_images(jpg_path):
     images = []
     for jpg_image in os.listdir(f"{jpg_path}"):
+      final_path = f"{jpg_path}\\{jpg_image}"
+      final_path = final_path.replace('\\', os.sep).replace('/', os.sep)
       try:
-        images.append((f"{jpg_path}\\{jpg_image}", f"{jpg_image}"))
+        images.append((final_path, f"{jpg_image}"))
       except Exception as e:
-        print(f"{jpg_path}\\{jpg_image}", e)
+        print(final_path, e)
     return images
 
 def on_ui_tabs():     
