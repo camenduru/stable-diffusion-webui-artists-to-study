@@ -1,7 +1,5 @@
 🐣 Please follow me for new updates https://twitter.com/camenduru
 
-🤑 Please become my patron https://patreon.com/camenduru
-
 # Artists To Study
 
 ![artists-to-study](https://user-images.githubusercontent.com/54370274/197829512-e7d30d44-2697-4ecd-b9a7-3665217918c7.jpg)
